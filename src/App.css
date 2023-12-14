@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #313c5a;
+}
+.homePageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 100vh;
+}
+
+.formWrapper {
+    background: #2b2a2b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+footer a {
+    color: #4781d2;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainLabel {
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.homePageLogo {
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+.inputBox {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-bottom: 14px;
+    background: #eee;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.copyBtn{
+    color: #eee;
+    border: 2px solid #eee;
+}
+.copyBtn:hover{
+    color: #b6b3b3;
+    border: 2px solid #b6b3b3;
+    
+}
+.joinBtn,
+.leaveBtn {
+    background: #0c3163;
+    width: 100px;
+    color: white;
+    margin-left: auto;
+}
+
+.joinBtn:hover,
+.leaveBtn:hover {
+    background: #052148;
+}
+
+.createInfo {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.createNewBtn {
+    color: #0971e9;
+    text-decoration: none;
+    border-bottom: 1px solid #0990ff;
+    transition: all 0.3s ease-in-out;
+}
+
+.createNewBtn:hover,
+footer a:hover {
+    color: #e0e0e0;
+    border-color: #191d1b;
+}
+
+/* .mainWrap {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+} */
+
+.aside {
+    background: #14182b;
+    padding: 16px;
+    color: #fff;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+.asideInner {
+    flex: 1;
+}
+
+.clientsList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.client {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+.userName {
+    margin-top: 10px;
+}
+
+.logo {
+    border-bottom: 1px solid #424242;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.logoImage {
+    height: 60px;
+}
+
+.leaveBtn {
+    width: 100%;
+    margin-top: 20px;
+}
+.CodeMirror {
+    min-height: calc(100vh - 20px);
+    font-size: 14px;
+    line-height: 1.6;
+    padding-top: 20px;
+}
+.editorWrap{
+    width: 100%;
+}
+.editor-campo{
+    max-width: 100vh;
+}
+.stdin-stdout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 991px) {
+    .stdin-box, .stdout-box{
+        width: 50%;
+        height: 200px;
+    }
+    .stdin-stdout{
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .stdin-box, .stdout-box{
+        width: 100%;
+        height: 40vh;
+        margin-right:10px;
+    }
+    
+    .stdin-stdout{
+        flex-direction: column;
+    }
+}
